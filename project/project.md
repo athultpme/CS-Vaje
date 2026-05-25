@@ -20,16 +20,16 @@ The SSH server was launched inside Docker and exposed on 'localhost:2222' . This
 
 The laboratory environment was initialized using Docker Compose. The SSH container was started with the following command:
 
-'''bash
+```bash
 docker compose up -d
-'''
+```
 
 After the container was running, the user-creation script was executed inside the container to create the test accounts required for the experiment. The following commands were used:
 
-'''bash
+```bash
 docker exec -it ssh_lab bash
 /create_users.sh
-'''
+```
 
 when i executed create_users.sh is already executable file.
 
@@ -37,30 +37,30 @@ This step created the three experimental accounts: 'weakuser', 'mediumuser', and
 
 Next, I used nmap to confirm that the SSH service active on port 2222 and to identify the service version.The scan used was:
 
-'''bash
+```bash
 nmap -sS -sV -p 2222 localhost
-'''
+```
 
 After confirming the service was running. I used Hydra to try logging in with a password list. For the weak account, the command was:
 
-'''bash
+```bash
 hydra -l weakuser -P passwords.txt ssh://localhost:2222
 hydra -l mediumuser -P passwords.txt ssh://localhost:2222
 hydra -l stronguser -P passwords.txt ssh://localhost:2222
-'''
+```
 
 The same method was used for the strong account to compare how password strength affects the result. I noted whether the login was successful, how long the attack took, and how many attempts were needed.
 
 For the protected configuration, fail2ban was enabled to limit repeated failed SSH logins from a single source. A standard SSH jail configuration was used with a low retry threshold to simulate rate limiting behavior:
 
-'''bash
+```bash
 [sshd]
 enabled = true
 port 2222
 maxretry = 3
 bantime = 3600
 findtime = 600
-'''
+```
 The status of fail2ban and its log message were reviewed to confirm whether the attacking source was blocked after repeated failures. This allowed the study to measure how rate limiting changes the behaviour of automated brute-force attempts.
 
 ## 3. Experiment
