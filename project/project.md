@@ -69,23 +69,23 @@ The status of fail2ban and its log message were reviewed to confirm whether the 
 
 The first step was a port and service scan of the local SSH server. The 'nmap' scan confirmed that TCP port '2222' was open and that the service was running OpenSSH. This verified that the target service was reachable before brute-force testing began.
 
-![Figure 1. Nmap scan confirming SSH on localhost:2222.](1.jpg)
+![Figure 1. Nmap scan confirming SSH on localhost:2222.](1.png)
 
 ### User creation
 
 The Docker container was then started, and the user-creation script was executed inside the container. This step created the three accounts needed for the experiment and confirmed that the lab environment was correctly prepared before the attack phase.
 
-![Figure 2. Docker container startup and SSH user creation.](2.jpg)
+![Figure 2. Docker container startup and SSH user creation.](2.png)
 
 ### Brute-force testing
 
 Hydra was used to attack each of the three accounts with the same password list. The screenshots show that the credentials for 'weakuser', 'mediumuser', and 'stronguser' were all recovered successfully from the wordlists. This demonstrates that the attack behaved as a dictionary attck rather than a pure guessing attack against random passwords.
 
-![Figure 3. Hydra successfully authenticating weakuser.](3.jpg)
+![Figure 3. Hydra successfully authenticating weakuser.](3.png)
 
-![Figure 4. Hydra successfully authenticating mediumuser.](4.jpg)
+![Figure 4. Hydra successfully authenticating mediumuser.](4.png)
 
-![Figure 5. Hydra successfully authenticating stronguser.](5.jpg)
+![Figure 5. Hydra successfully authenticating stronguser.](5.png)
 
 ## 7. Results
 
