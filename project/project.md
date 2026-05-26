@@ -133,8 +133,21 @@ The following improvements are recommended:
 This experiment demonstrated that SSH accounts are vulnerable to dictionary-based attacks when the correct password is present in the attacker's wordlist. All three test accounts were successfully recovered, which shows that even a complex-looking password can be compromised if it is reused, predictable, or know in advance. The study therefore supports stronger authentication methods, better password hygiene, and additional protections such as rate limiting and monitoring.
 
 
+## 11. Reference 
 
+[1] https://www.kali.org/tools/hydra/
 
+[2] https://labex.io/tutorials/hydra-brute-force-ssh-in-hydra-549926 
+
+[3] https://www.ssh.com/academy/types-of-password-attacks-and-how-to-prevent-them
+
+[4] https://www.recordedfuture.com/threat-intelligence-101/tools-and-techniques/nmap-commands 
+
+[5] https://blog.mikejmcguire.com/2023/11/03/using-fail2ban-on-a-docker-host-for-ssh-containers/
+
+[6] https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-20-04
+
+[7] https://www.linode.com/docs/guides/using-fail2ban-to-secure-your-server-a-tutorial/
 
 
 
