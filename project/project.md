@@ -100,7 +100,7 @@ The status of the 'docker-ssh' jail was then checked using 'fail2ban-client stat
 ## 7. Results
 
 | Config | Password | Protection | Success | Attempts |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | Weak password, no protection | '123456' | None | Yes | 20  |
 | Medium password, no protection | 'Password123' | None | Yes | 22 |
 | Strong password, no protection | 'StrOng!Pass#2026' | None | Yes | 22 |
