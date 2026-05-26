@@ -1,0 +1,10 @@
+Seminar/Project Report Submission
+
+This file contains the URL to the seminar report repository. The project has been prepared in Markdown (.md) format. I hope it is acceptable. Kindly let me know if you require this in any other format, Professor
+
+Repository:
+https://github.com/athultpme/CS-Vaje/blob/main/project/project.md
+
+Prepared by:
+Athul Thuvattu Parambath
+Enrollment Number : 35250310

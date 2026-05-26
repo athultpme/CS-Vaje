@@ -65,17 +65,19 @@ The status of fail2ban and its log message were reviewed to confirm whether the 
 
 ## 3. Experiment
 
-### Reconnaissance
-
-The first step was a port and service scan of the local SSH server. The 'nmap' scan confirmed that TCP port '2222' was open and that the service was running OpenSSH. This verified that the target service was reachable before brute-force testing began.
-
-![Figure 1. Nmap scan confirming SSH on localhost:2222.](1.png)
-
 ### User creation
 
 The Docker container was then started, and the user-creation script was executed inside the container. This step created the three accounts needed for the experiment and confirmed that the lab environment was correctly prepared before the attack phase.
 
 ![Figure 2. Docker container startup and SSH user creation.](2.png)
+
+
+### Reconnaissance
+
+The reconnaissance step was a port and service scan of the local SSH server. The 'nmap' scan confirmed that TCP port '2222' was open and that the service was running OpenSSH. This verified that the target service was reachable before brute-force testing began.
+
+![Figure 1. Nmap scan confirming SSH on localhost:2222.](1.png)
+
 
 ### Brute-force testing
 
