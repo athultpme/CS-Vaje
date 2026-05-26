@@ -87,15 +87,26 @@ Hydra was used to attack each of the three accounts with the same password list.
 
 ![Figure 5. Hydra successfully authenticating stronguser.](5.png)
 
+### Experiment fail2ban test
+
+A test was also performed as a protective layer using fail2ban. After the jail was enabled, Hydra was run again against 'stronguser' using the same password list. This time, the attack did not recover a valid password, which suggest that fail2ban reduced the effectiveness of repeated login attempts from the source address.
+
+![Figure 6. Hydra attack against stronguser with fail2ban enabled.](6.png)
+
+The status of the 'docker-ssh' jail was then checked using 'fail2ban-client status docker-ssh'. The output showed that the jail was active, the monitored log file was being used, and the attacking IP '172.22.0.1' has been banned. This confirms that the protection mechanism was successfully triggered.
+
+![Figure 7. fail2ban status showing a banned IP in the Docker SSH jail.](7.png)
+
 ## 7. Results
 
-| Config | Password | Protection | Success | Time | Attempts |
+| Config | Password | Protection | Success | Attempts |
 |---|---|---|---|---|---|
-| Weak password,   no protection | '123456' | None | Yes |    |     |
-| Medium password, no protection | 'Password123' | None | Yes |    |    |
-| Strong password, no protection | 'StrOng!Pass#2026' | None | Yes |    |    |
+| Weak password,   no protection | '123456' | None | Yes | 20  |
+| Medium password, no protection | 'Password123' | None | Yes | 22 |
+| Strong password, no protection | 'StrOng!Pass#2026' | None | Yes | 22 |
+| Strong password with fail2ban | 'StrOng!Pass#2026' | fail2ban | No | 22 |
 
-All three logins were successful because the tested passwords were present in the wordlist used by Hydra. This means the experiment demonstrates how dictionary attacks can succeed even when a password appears complex, if it is known or predictable to the attacker.
+All three logins were successful because the tested passwords were present in the wordlist used by Hydra. This means the experiment demonstrates how dictionary attacks can succeed even when a password appears complex, if it is known or predictable to the attacker. The fail2ban protected test did not recover a valid password. The ban status shows that the attacking IP was blocked, which prevented a successful login.
 
 ## 8. Discussion
 
