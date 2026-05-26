@@ -104,7 +104,7 @@ The status of the 'docker-ssh' jail was then checked using 'fail2ban-client stat
 | Weak password,   no protection | '123456' | None | Yes | 20  |
 | Medium password, no protection | 'Password123' | None | Yes | 22 |
 | Strong password, no protection | 'StrOng!Pass#2026' | None | Yes | 22 |
-| Strong password with fail2ban | 'StrOng!Pass#2026' | fail2ban | No | 22 |
+| Strong password with fail2ban  | 'StrOng!Pass#2026' | fail2ban | No | 22 |
 
 All three logins were successful because the tested passwords were present in the wordlist used by Hydra. This means the experiment demonstrates how dictionary attacks can succeed even when a password appears complex, if it is known or predictable to the attacker. The fail2ban protected test did not recover a valid password. The ban status shows that the attacking IP was blocked, which prevented a successful login.
 
