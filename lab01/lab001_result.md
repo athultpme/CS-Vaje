@@ -1,5 +1,9 @@
 # Lab 1:Introduction to Kali Linux
 
+## Prepared by
+Name: Athul Thuvattu Parambath
+Enrollment Number: 35250310
+
 ## Purpose
 This lab is focused on exploring the Kali Linux environment and Identifying its role in cybersecurity workflows. Kali Linux is a specialized Linux distribution used for penetration testing, security assessment, and forensics analysis.
 
