@@ -12,7 +12,7 @@
 
 **The phishing login page served by SET. This is a cloned version of the custom login.html.**
 
-![Figure 1](testdata.png)
+![broswer](browser.png)
 
 ###2. Screenshot of the Terminal with Captured Data
 
