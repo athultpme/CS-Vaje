@@ -9,7 +9,7 @@ The screenshots show basic system verification commands such as whoami, hostname
 
 ![hostnamectl output](hostnamectl.png)
 
-![uname](uname -a_ip a_df-h.png).
+![uname](uname -a_ip a_df-h.png)
 
 They also show the use of tools including wget, nmap, john, htop, traceroute, nload, strings, tcpdump, searchsploit, dnsenum, lbd, and nth
  
