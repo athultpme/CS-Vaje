@@ -5,19 +5,19 @@ This lab is focused on exploring the Kali Linux environment and Identifying its 
 
 ## Basic command line practice
 
-The screenshots show basic system verification commands such as whoami, hostnamectl, uname -a, df -h, and ip a ![whoami output](file:whoami.png)
-![hostnamectl output](file:hostnamectl.png)
-![uname](file:uname -a_ip a_df-h.png).
+The screenshots show basic system verification commands such as whoami, hostnamectl, uname -a, df -h, and ip a ![whoami output](whoami.png)
+![hostnamectl output](hostnamectl.png)
+![uname](uname -a_ip a_df-h.png).
 They also show the use of tools including wget, nmap, john, htop, traceroute, nload, strings, tcpdump, searchsploit, dnsenum, lbd, and nth 
-![wget](file:wget_nmap_john_ls-la.png)
-![htop](file:htop.png)
-![traceroute](file:traceroute.png)
-![nload](file:nload.png)
-![string](file:string.png)
-![tcpdump](file:tcp dump.png)
-![searchsploit](file:searchsploit.png)
-![dnsenum](file:dnsenum.png)
-![lbd](file:lbd.png)
+![wget](wget_nmap_john_ls-la.png)
+![htop](htop.png)
+![traceroute](traceroute.png)
+![nload](nload.png)
+![string](string.png)
+![tcpdump](tcp dump.png)
+![searchsploit](searchsploit.png)
+![dnsenum](dnsenum.png)
+![lbd](lbd.png)
 ![nth](nth.png)
 
 ## Conclusion
