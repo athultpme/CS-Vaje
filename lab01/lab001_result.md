@@ -23,7 +23,7 @@ They also show the use of tools including wget, nmap, john, htop, traceroute, nl
 
 ![string](string.png)
 
-![tcpdump](tcp dump.png)
+![tcpdump](tcp dumb.png)
 
 ![searchsploit](searchsploit.png)
 
