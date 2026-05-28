@@ -1,4 +1,4 @@
-# GPF Key Generation, Encryption, and Signing Report
+# GPG Key Generation, Encryption, and Signing Report
 
 **Name:** Athul Thuvattu Parambath
 **Enrollment Number:** 35250310
