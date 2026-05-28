@@ -38,7 +38,7 @@ Understand that a public key alone does not imply trust, MITM attacks can occur 
 
 ![MITM](mitm.png)
 
-![MITM](Mallory_mitm.png)
+![MITM](mallory_mitm.png)
 
 ## 5. Web of Trust
 
