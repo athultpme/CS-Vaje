@@ -22,8 +22,10 @@ The objective of this lab was to learn the basics of working in a Linux command-
 - The session was successfully connected under the user 'athultp'.
 - The directory changed to '/hme/athultp'.
 - Basic navigation commands were verified successfully.
-!
+
+
 ![Connecting screenshot](1.png)
+
 
 ## Environment Setup
 In this lab, I used Kali-Linux environmanet in virtual-box.
@@ -41,6 +43,7 @@ In this lab, I used Kali-Linux environmanet in virtual-box.
 - Sudo privileges were configured.
 - SSH service started.
 - 'tmate' was installed.
+
 
 ![Environment setup screenshot](2.png)
 
@@ -63,7 +66,9 @@ cd ..
 - I displayed directory contents.
 - I moved to the parent directory successfully.
 
+
 ![Navigation screenshot](3.png)
+
 
 ### 2. Working with Files and Directories
 I created directories and files, edited a text file, and moved the file into another folder.
@@ -84,7 +89,9 @@ mv description.txt test/
 - A 'test' directory was created.
 - The file was moved into the 'test' folder.
 
+
 ![Files and Directories screenshot](4.png)
+
 
 ### 3. Moving and Copyng Files
 I renamed the file and copied it to my home directory.
@@ -108,7 +115,9 @@ chmod 644 my_profile.txt
 - Permissions were reviewed.
 - 'my_profile.txt' was set to read-only for normal users.
 
+
 ![Permissions screenshot](5.png)
+
 
 ### 5. System Information
 I checked the username, system details, and available disk space.
