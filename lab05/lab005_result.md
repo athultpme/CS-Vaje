@@ -38,14 +38,14 @@ Understand that a public key alone does not imply trust, MITM attacks can occur 
 
 ![MITM](mitm.png)
 
-![MITM](Mallory mitm.png)
+![MITM](Mallory_mitm.png)
 
 ## 5. Web of Trust
 
-![gpg edit key](gpg edit.png)
+![gpg edit key](gpg_edit.png)
 
 
-![gpg edit key](gpg edit 1.png)
+![gpg edit key](gpg_edit_1.png)
 
 
 ## 5. Additional Challenge: signing Bob's Key
